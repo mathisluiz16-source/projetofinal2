@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    list-style: none;
+}
+
+#list-item-link {
+    color: #333;
+    text-decoration: none;
+    font-family: "Elms Sans";
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction_div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #3f7f45;
+}
+
+.introduction_div_title_box{
+    width: 50%;
+    color: white;
+    text-align: justify;
+    font-family: "Elms Sans";
+}
+.introduction_div_title_box >h1{
+    text-align: center;
+}
+
+.video_div{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_boxes_div {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.info_box{
+    padding: 1rem;
+    width: 30%;
+    background-color: lightgreen;
+}

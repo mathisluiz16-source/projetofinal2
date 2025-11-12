@@ -1,81 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: "Elms Sans", sans-serif; 
+  color: #333; 
 }
 
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 4rem;
-    
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  height: 4rem;
+  z-index: 100; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .nav_list {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
 }
+
 
 #list-item-link {
-    color: #333;
-    text-decoration: none;
-    font-family: "Elms Sans";
-    font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease;
 }
+
+.list-item-link:hover {
+  color: #3f7f45; 
+}
+
 
 main {
-    width: 100%;
-    min-height: 100vh;
-    
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.introduction_div {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #3f7f45;
+#introduction-div {
+  width: 100%;
+  
+  min-height: 400px;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3f7f45; 
 }
 
-.introduction_div_title_box{
-    width: 50%;
-    color: white;
-    text-align: justify;
-    font-family: "Elms Sans";
-}
-.introduction_div_title_box >h1{
-    text-align: center;
+.introduction_div_title_box {
+  width: 50%;
+  color: white;
+  text-align: justify;
 }
 
-.video_div{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.introduction_div_title_box > h1 {
+  text-align: center; 
+  margin-bottom: 1rem;
+}
+
+.video_div {
+  width: 100%;
+  height: 600px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#info-boxes-solutions {
+  padding: 6rem 0;
+  text-align: center; 
+}
+
+#info-boxes-solutions h1 {
+  color: #1b3d1b;
+  margin-bottom: 2rem; 
 }
 
 .info_boxes_div {
-    width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 3rem;
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start; 
+  padding: 4rem 2rem; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
-.info_box{
-    padding: 1rem;
-    width: 30%;
-    background-color: lightgreen;
+.info_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem; 
+  padding: 1.5rem;
+  min-height: 300px;
+  width: 30%;
+  background-color: #c8f7c5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: #1b3d1b;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: justify;
 }
+
+.info_box h2 {
+  text-align: center; 
+  width: 100%; 
+}
+
+
+.info_box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+#objetivo-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem; 
+  background: url("https://png.pngtree.com/background/20230412/original/pngtree-natural-forest-green-picture-image_2394690.jpg") no-repeat center center/cover;
+}
+
+.objetivo_texto {
+  width: 50%;
+  background-color: #c8f7c5;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #1b3d1b;
+  line-height: 1.6;
+}
+
+.objetivo_texto h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.subobjetivo {
+  margin-bottom: 1.5rem; 
+}
+
+.subobjetivo h3 {
+  color: #2e7d32;
+  margin-bottom: 0.5rem; 
+}
+
+/* FOOTER */
+footer {
+  background-color: #3f7f45; /* Mesmo verde do cabeçalho */
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.95rem;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: #c8f7c5; /* Tom mais claro para contraste */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
